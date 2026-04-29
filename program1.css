@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(239, 205, 160);
+}
+#he{
+    margin-bottom: -110px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    background-color: wheat;
+}
+#k{
+    margin-top: 10px;
+    padding-left: 80px;
+    text-align: left;
+    font-size: 120px;
+    font-family: cursive;
+}
+#i{
+    margin-top: 10px;
+    margin-left: 140px;
+    border-radius: 450px;
+}
+#w{
+    margin-top: -10px;
+    padding-left: 100px;
+    text-align: right;
+    font-size: 150px;
+    font-family: cursive;
+}
+#in{
+    display: flex;
+    
+    font-size: 15px;
+    margin-bottom: -20px;
+     margin-left: -10px;
+    margin-right: -10px;
+    background-color: antiquewhite;
+}
+#pa{
+    font-size: 20px;
+}
+#ln{
+    padding-left: 30px;
+    padding-right: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(236, 183, 118);
+}
+#n{
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color: rgb(189, 137, 58);
+}
+#ho{padding-left: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 40px;
+}
+#ab{padding-left: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+#co{padding-left: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right;
+font-size: 40px;
+}
+#art{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(162, 124, 43);
+    padding-bottom: 20px;
+    border-radius: 50px;
+}
+#am{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+}
+#hrr{
+    margin-top: -35px;
+}
+#para{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: Helvetica;
+}
+#hhh{
+    font-size: 40px;
+    text-align: center;
+}
+#fo{
+    display: flex;
+    background-color: rgb(29, 25, 25);
+    margin-top: 50px;
+    margin-bottom: -40px;
+    border-top-left-radius:30px ;
+    border-top-right-radius: 30px;
+}
+#em{
+    border-radius: 100px;
+    /* margin-left: 20px;
+    margin-top: ; */
+    margin: 20px;
+}
+#ft{
+
+    color: white;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 100px;
+    
+}
+#ph{ 
+    
+    margin-top: 40px;
+    margin-left: 180px;
+color: white;
+}
+#gm{
+    margin-left: -250px;
+    margin-top: 100px;
+color: white;
+}
+#ad{
+    margin-left: -250px;
+    margin-top: 165px;
+color: white;
+}
