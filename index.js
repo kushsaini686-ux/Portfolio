@@ -4,11 +4,11 @@ const server=http.createServer((req,res)=>{
     try{
     if(req.method==="POST" && req.url==="/"){
         res.writeHead(200,{'content-type':'text/html'});
-        res.end(fs.readFileSync('./Portfolio.html','utf-8'));
+        res.end(fs.readFileSync('./index.html','utf-8'));
     }
-    else if(req.url==="/Portfolio.css"){
+    else if(req.url==="/index.css"){
         res.writeHead(200,{'content-type':'text/css'});
-        res.end(fs.readFileSync('Portfolio.css','utf-8'));
+        res.end(fs.readFileSync('index.css','utf-8'));
     }
     else{
         res.writeHead(200,{'content-type':'text/html'});
