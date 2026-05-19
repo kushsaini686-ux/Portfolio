@@ -1,0 +1,290 @@
+/* --- Master Design Reset & Typography --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #202020; /* Dark grey viewport mockup background like your screenshot */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* --- Container Outer bounding box --- */
+.login-wrapper {
+    width: 100%;
+    max-width: 960px;
+    padding: 20px;
+}
+
+/* --- The Main Layout Block matching screenshot dimensions --- */
+.split-container {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 25px;
+    min-height: 520px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+/* --- LEFT PANEL: Styled Custom Curved Section --- */
+.left-branding-panel {
+    flex: 1;
+    background-color: #0b6633; /* Fallback */
+    background: linear-gradient(135deg, #a88100 0%, #ffc300 100%); /* Gold Match with your website */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* The fluid organic circular curve accent inside the left section */
+.left-branding-panel::after {
+    content: '';
+    position: absolute;
+    width: 140%;
+    height: 120%;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 45%;
+    top: -20%;
+    left: -50%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.panel-inner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+/* Rounded Profile Logo Badge */
+.brand-badge {
+    width: 65px;
+    height: 65px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.badge-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.branding-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.branding-subtitle {
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 260px;
+    opacity: 0.9;
+    margin-bottom: 35px;
+}
+
+/* Ghost outline button styled exactly like 'SIGN IN' on left side of image */
+.ghost-panel-btn {
+    display: inline-block;
+    padding: 10px 45px;
+    border: 1.5px solid rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.ghost-panel-btn:hover {
+    background-color: #ffffff;
+    color: #a88100;
+}
+
+.panel-mini-footer {
+    margin-top: 50px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    opacity: 0.6;
+}
+
+/* --- RIGHT PANEL: Forms Portal Content --- */
+.right-form-panel {
+    flex: 1.1;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-inner-wrapper {
+    width: 100%;
+    max-width: 340px;
+    text-align: center;
+}
+
+/* Welcome Titles Stylings */
+.welcome-heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #a88100; /* Dark Gold primary title style */
+    text-transform: lowercase;
+    margin-bottom: 5px;
+    letter-spacing: -0.5px;
+}
+
+.welcome-subtext {
+    font-size: 12px;
+    color: #8c8c8c;
+    margin-bottom: 35px;
+}
+
+/* Form structure styles */
+.portal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Pill/Capsule Input fields matching screenshot exactly */
+.field-container input {
+    width: 100%;
+    padding: 14px 25px;
+    background-color: #e2f0e7; /* Light soft background shade for input fields */
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+/* Color theme tint adapt on focus */
+.field-container input:focus {
+    background-color: #f7eed3; /* Tint changes to very soft warm yellow on click */
+    box-shadow: inset 0 0 0 1.5px #ffc300;
+}
+
+.field-container input::placeholder {
+    color: #92a498;
+    opacity: 0.9;
+}
+
+/* Forgot element option placement */
+.forgot-wrapper {
+    text-align: center;
+    margin: 5px 0 15px 0;
+}
+
+.forgot-trigger-link {
+    font-size: 11px;
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.forgot-trigger-link:hover {
+    text-decoration: underline;
+    color: #ffc300;
+}
+
+/* Solid CTA Main Button centered at bottom */
+.prime-login-btn {
+    width: auto;
+    min-width: 140px;
+    padding: 11px 40px;
+    background-color: #ffc300; /* Matching Website Primary Theme Accent Color */
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 195, 0, 0.3);
+    transition: all 0.2s ease;
+}
+
+.prime-login-btn:hover {
+    background-color: #a88100;
+    box-shadow: 0 4px 15px rgba(168, 129, 0, 0.4);
+}
+
+/* Subtitles Links at the bottom */
+.portal-alt-nav {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #333333;
+}
+
+.highlight-signup-link {
+    color: #ffc300;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.highlight-signup-link:hover {
+    text-decoration: underline;
+}
+
+.home-return-btn {
+    display: block;
+    margin-top: 20px;
+    font-size: 11px;
+    color: #999999;
+    text-decoration: none;
+}
+
+.home-return-btn:hover {
+    color: #ffc300;
+}
+
+/* ==========================================================================
+   📱 MOBILE BREAKPOINT (Makes page stack cleanly on responsive checks)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    .split-container {
+        flex-direction: column;
+        max-width: 400px;
+        min-height: auto;
+    }
+    .left-branding-panel {
+        padding: 30px 20px;
+    }
+    .left-branding-panel::after {
+        display: none;
+    }
+    .panel-mini-footer, .branding-subtitle {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .right-form-panel {
+        padding: 30px 20px;
+    }
+}

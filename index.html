@@ -3,34 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KWeb</title>
+    <title>KWeb - Kush Saini Portfolio</title>
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 
-    <!-- Header Section -->
+    <div class="top-utility-bar">
+        <div class="profile-badge">
+            <img src="./ks.jpg" alt="KS" class="avatar-img">
+        </div>
+        <a href="./Login.html" class="isolated-login-btn" title="Login">
+            <img src="./login.png" alt="Login">
+        </a>
+    </div>
+
     <header id="he">
         <h1 id="k">Portfolio</h1>
-        <img id="i" src="./240_F_510206850_NI3gwIwDtyIz4WPUnAkGsOidf5Y8lUd6.jpeg" alt="Photo Crupt">
+        <div class="header-logo-wrapper">
+            <img id="i" src="./240_F_510206850_NI3gwIwDtyIz4WPUnAkGsOidf5Y8lUd6.jpeg" alt="Photo Crupt">
+        </div>
         <h1 id="w">Website</h1>
     </header>
 
-    <!-- Navigation Menu (Clean & Without Rigid Buttons) -->
     <nav id="n">
-        <a href="./index.html" id="ho"><b>Home</b></a>
-        <a href="./indexabout.html" id="ab"><b>About</b></a>
-        <a href="./indexprojrct.html" id="co"><b>Project</b></a>
-        <a href="./Login.html" id="login-link">
-            <img id="login" src="./login.png" width="40" height="40" alt="Login">
-        </a>
+        <a href="#he"><b>Home</b></a>
+        <a href="#about-section"><b>About</b></a>
+        <a href="#project-section"><b>Project</b></a>
     </nav>
 
-    <!-- About Me Section -->
     <section id="in">
         <div id="ln">
             <p id="l"><b>ABOUT ME</b></p>
         </div>
-        <div class="marquee-container">
+        <div class="marquee-wrapper">
             <marquee behavior="scroll" loop="infinite" direction="left">
                 <p id="pa">
                     My Name is Kush Saini. My Father Name is Sh. Satbir Singh Saini s/o Late Sh. Maan Singh.
@@ -38,45 +43,90 @@
                     Optical Fiber Cable, Twisted Pair Cable or Little bit known About Electronic Device Repairing 🧑‍🔧
                     (Amplifiers, Node, Small Circuits Boards, Earphones etc.) and 
                     My Hobbies is climbing, playing Chess♘, Writing in Notebooks📝.
-                    I Love Learning Deep About Computer Hardware & Software and Its Working.
+                    I Love Learning Deep About Computer 🖥 Hardware & Software and Its Working.
                     I Like Cow's Baby(Calf)🐮, Puppies🐶.
                 </p>
             </marquee>
         </div>
     </section>
      
-    <!-- Main Portfolio Cards Section -->
     <main id="mai">
         <div id="card1" class="profile-card">
-            <img src="./WhatsApp Image 2025-09-26 at 7.26.59 PM.jpeg" alt="Profile Picture" id="img1">
+            <img src="./WhatsApp Image 2025-09-26 at 7.26.59 PM.jpeg" alt="Profile Picture" class="card-img">
             <h2 class="kname">Kush Saini</h2>
-            <p class="bio">Class : 10th<br>Score: 352/500<br>Class: 12th<br>Stream: Medical🩺<br>
+            <p class="bio">Class : 10th<br>Score: 352/500<br>Class: 12th<br>Stream: Medical 🩺<br>
             Knowledge About : Body Organs<br>Deep Knowledge in Water</p>
         </div>
 
         <div id="card2" class="profile-card">
-            <img src="./kushph.png" alt="Profile Picture" id="img2" >
+            <img src="./kushph.png" alt="Profile Picture" class="card-img">
             <h2 class="kname">Kush Saini</h2>
             <p class="bio">Class : B.C.A<br>Chaudhary Devi Lal University, Sirsa<br>
             Score: 3263/5100<br>Deep Knowledge in Coaxial Cable, Optical Fiber, Twisted Pair Cable, Electronics Components etc.</p>
         </div>
       
         <div id="card3" class="profile-card">
-            <img src="./ks.png" alt="Profile Picture" id="img3">
+            <img src="./ks.png" alt="Profile Picture" class="card-img">
             <h2 class="kname">Kush Saini</h2>
             <p class="bio">Class : M.C.A <br>Section : B <br>Roll no: 131 <br>
-            What happens is always for the best <br>Keep Smile😁</p>
+            What happens is always for the best <br>Keep Smile 😁</p>
         </div>
     </main>
 
-    <!-- Footer Section (Negative Margins Hatane ke liye layout change kiya) -->
+    <section id="about-section" class="scroll-section">
+        <article id="art">
+            <h1 id="am">About Me</h1>
+            <hr id="hrr">
+            <section id="para">
+                <p>
+                    My Name is Kush Saini. My Father Name is Sh. Satbir Singh Saini s/o Late Sh. Maan Singh.<br>
+                    I am from Tohana(125120) District: Fatehabad State: Haryana<br><br>
+                    In Tohana, the Sutlej River is subdivided into 7 Canals. Each Canal contains millions of liters of crystal clear water.
+                    The Sutlej River originates from Rakshastal Lake, located near Mount Kailash in Tibet, which is situated near Mansarovar.
+                </p>
+            </section>
+            
+            <figure id="fig">
+                <img id="Hadpic" src="./head1.jpeg" alt="Tohana Head">
+                <figcaption id="cap">***** Tohana Head *****</figcaption>
+            </figure>
+
+            <ul id="lists">
+                <li>I have many Skills like Knowledge of Wired Data Transmission in Coaxial cable, Optical Fiber Cable, Twisted Pair Cable or Little bit known About Electronic Device Repairing 🧑‍🔧 (Amplifiers, Node, Small Circuits Boards, Earphones etc.).</li>
+                <li>My Hobbies is climbing, playing Chess♘, Writing in Notebooks 📝.</li>
+                <li>I Love Learning Deep About Computer 🖥 Hardware & Software and Its Working.</li>
+                <li>I Like Cow's Baby(Calf) 🐮, Puppies 🐶.</li>
+            </ul>
+
+            <h1 id="hhh">** Thanks to Read **</h1>
+        </article>
+    </section>
+
+    <section id="project-section" class="scroll-section">
+        <h1 id="proj">My Projects</h1>
+        <div class="projects-grid">
+            <article class="project-card">
+                <h2>Project 1: Index Website</h2>
+                <p>A Responsive Personal Index Website Shows My Skills and Projects</p>
+                <a href="#he" class="cta-btn">View Project</a>
+            </article>
+            <article class="project-card">
+                <h2>Project 2: Calf Page</h2>
+                <p>A Responsive Calf Page Shows Abouts Calfs Life Span , Calfs Routines, All Abouts Calfs.</p>
+                <a href="./Program1.html" class="cta-btn">View Project</a>
+            </article>
+        </div>
+    </section>
+
     <footer id="fo">
         <img id="em" src="./240_F_510206850_NI3gwIwDtyIz4WPUnAkGsOidf5Y8lUd6.jpeg" alt="Photo Contact" width="200" height="180">
-        <div id="footer-details">
+        <div class="footer-content-block">
             <h1 id="ft">KUSH SAINI</h1>
-            <h3 id="ph">PHONE NO: +919996012370</h3>
-            <h3 id="gm">GMAIL: kushsaini686@gmail.com</h3>
-            <h3 id="ad">ADDRESS: Tohana(125120)</h3>
+            <div class="footer-details-grid">
+                <h3 id="ph"><b>PHONE NO:</b> +919996012370</h3>
+                <h3 id="gm"><b>GMAIL:</b> kushsaini686@gmail.com</h3>
+                <h3 id="ad"><b>ADDRESS:</b> Tohana(125120)</h3>
+            </div>
         </div>
     </footer>
 
